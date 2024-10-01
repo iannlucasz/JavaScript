@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+        body {
+            background-color: rgb(116, 188, 233);
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+        div#resultado {
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+        div#aprovado {
+            background-color: rgb(10, 200, 10);
+            margin-right: 20em;
+        }
+        div#reprovado {
+            background-color: rgba(232, 33, 33, 0.848);
+            margin-right: 15em;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Calcule sua Média Aqui
+    </h1>
+    <input type="number" name="media1" id="media1" placeholder="1º Bimestre">
+    <input type="number" name="media2" id="media2" placeholder="2º Bimestre">
+    <input type="number" name="media3" id="media3" placeholder="3º Bimestre">
+    <input type="number" name="media4" id="media4" placeholder="4º Bimestre">
+    <input type="button" value="Resultado" onclick="somar()">
+    
+    <div id="resultado">Resultado:</div>
+    <div id="aprovado">
+        20 pontos = Aprovado
+    </div>
+    <div id="reprovado">
+        Menos de 20 pontos = Reprovado
+    </div>
+    <script>
+        function somar() {
+            var nota1 = window.document.getElementById('media1')
+            var nota2 = window.document.getElementById('media2')
+            var nota3 = window.document.getElementById('media3')
+            var nota4 = window.document.getElementById('media4')
+            var res = window.document.getElementById('resultado')
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var n3 = Number(nota3.value)
+            var n4 = Number(nota4.value)
+            var s = n1 + n2 + n3 + n4
+            resultado.innerHTML = `A soma das suas média é ${s}`
+        }
+
+        
+    </script>
+
+</body>
+</html>
