@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            background-color: rgba(21, 160, 225, 0.319);
+            color: rgb(4, 4, 4);
+        
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px rgb(255, 254, 254);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <input type="number" name="txtvel" id="txtvel" placeholder="Digite a velocidade"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">Resultado:</div>
+    <div id="final">Causa Final:</div>
+    <script>
+       function calcular() {
+        var txtvel = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#resultado')
+        var final = window.document.querySelector('div#final')
+        var vel = Number(txtvel.value)
+        resultado.innerHTML = `Sua velocidade atual é de ${vel} km/h`
+        var maxima = 80
+        var multado = 'MULTADO'
+        var normal = 'VELOCIDADE NORMAL'
+        if (vel > maxima) {
+            final.innerHTML = `A causa final foi : <strong>${multado}</strong>`
+        } else {
+            final.innerHTML = `A causa final foi : <strong>${normal}</strong>`
+        }
+        
+       }
+    </script>
+</body>
+</html>
