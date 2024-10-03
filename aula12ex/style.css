@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(117, 117, 200);
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+} 
+
+section {
+    background-color: rgba(241, 235, 235, 0.737);
+    border-radius: 10px;
+    padding: 15px;
+    width: 375px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.533);
+    
+}
+
+div#msg {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div#foto {
+    text-align: center;
+}
+
+div#cumprimento {
+    text-align: center;
+    padding-top: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
