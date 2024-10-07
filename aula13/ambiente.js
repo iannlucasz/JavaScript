@@ -1,11 +1,11 @@
 /*
 
 let fatias = 1
-do{
-    console.log(`A ${fatias}º é muito boa`)             MODO: DO
+do {
+    console.log(`A ${fatias}º é muito boa`)         MODO:   DO
     fatias++
 
-} while(fatias <=10)
+} while (fatias <= 8)
 
 */
 
