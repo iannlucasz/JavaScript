@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Super Contadort</title>
+    <title>Super Tabuada</title>
 </head>
 <body>
     <header>
-        <h1>Vamos Contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="dados">
-            <p>Inicio: <input type="number" name="inicio" id="txti"></p>
-            <p>Fim: <input type="number" name="fim" id="txtf"></p>
-            <p>Passos: <input type="number" name="passo" id="txtp"></p>
-            <input type="button" value="Contar" onclick="contar()">
+        <div>
+            <p>Número <input type="number" name="num" id="txtn"> <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+            
         </div>
-        <div id="res">
-            Preparando a contagem...
+        <div>
+            <select name="tabuada" id="seltab" size="10"></select>
         </div>
     </section>
     <footer>
