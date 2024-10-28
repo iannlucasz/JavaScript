@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div#conteudo {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background: dimgrey;
+    color: white;
+    padding-bottom: 20px;
+    
+}

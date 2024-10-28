@@ -1,8 +1,13 @@
-function somar(n1=0 , n2=0){
-    let numero1 = document.getElementById('txtnum1').value
-    let numero2 = document.getElementById('txtnum2').value
-    let resultado = Number(numero1) + Number(numero2) 
-    alert(`O resultado das somas é : ${resultado} `)
+function nomeCompleto(nome , sobrenome) {
+    return `${nome} ${sobrenome}`
 }
 
-somar(Number(numero1) , Number(numero2))
+let completo = nomeCompleto("Iann" , "Lucas")
+console.log('o nome completo é:' + completo)
+
+function idadeCompleta(idade) {
+    return `Sua idade completa é : ${idade}`
+}
+
+let idade = idadeCompleta(13 + 2)
+console.log(idade)
