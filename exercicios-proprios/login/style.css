@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right , blue , rgb(11, 11, 158) , rgb(77, 74, 74) , black);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+div#conteudo {
+    padding-top: 20px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+div#conteudo > p#user {
+    font-style: bolder;
+    font-size:larger;
+    margin-bottom: -15px;
+    padding-right: 50% ;
+    
+} 
+
+div#conteudo > p#password {
+    font-style: bolder;
+    font-size:larger;
+    margin-bottom: -15px;
+    padding-right: 52% ;
+}
+    
+input#txtusu {
+    width: 60% ;
+    height: 30px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.615);
+}
+
+input#txtsenha {
+    width: 60% ;
+    height: 30px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.615);
+}
+
+input#verificar {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: rgb(0, 149, 255);
+    background-color: rgb(67, 65, 65);
+}
