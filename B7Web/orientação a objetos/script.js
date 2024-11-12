@@ -14,9 +14,7 @@
         this.age = age;
     }
 
-    takeAStep() {
-        this.steps++;
-    }
+
  }
 
 
@@ -27,5 +25,3 @@
  p1.takeAStep();
 
  console.log(`O meu nome é ${p1.name} , tenho ${p1.age} anos de idade. Meu pai se chama ${p2.name} e ele tem ${p2.age} anos de idade, ele é casado com minha mãe que se chama ${p3.name} e ela tem ${p3.age} anos de idade`)
-
- console.log(`Iann deu : ${p1.takeAStep}`)
