@@ -1,25 +1,17 @@
 // Promise = Promessa
 
-function clicou() {
+ async function clicou() {
     // GET , POST , PUT , DELETE 
-    fetch('https://jsonplaceholder.typicode.com/posts ').then((response) => {
-        return response.json();
-    })
-    .then((json) =>{
-        alert(`Titulo do primeiro post: ${json[0].title}`)
-    })
-    .catch((error)=>{
-        alert('Deu problema ai mano , vê direito ae')
-        console.log(error)
-    })
-    .finally(()=> {
-        alert('Opa , finalmente acabou tudo!')
-    })
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts ')
+    let json = await response.json();
+    alert(`Titulo do primeiro post ${json[0].title}`);
+    
+   alert('Clicou')
 
 }
 
-function inserir() {
-    fetch(
+ async function inserir() {
+    let response = await fetch(
         'https://jsonplaceholder.typicode.com/posts' , 
         {
             method: 'POST',
@@ -31,14 +23,9 @@ function inserir() {
                 body: 'Corpo do teste',
                 userId: 2
             })
-        }
-    )
-    .then((response) =>{
-        return response.json();
-    })
-    .then((json) =>{
-        console.log(json);
-    })
+        });
+    let json = await response.json();
+    console.log(json);
 }
 
 
